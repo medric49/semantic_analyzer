@@ -4,4 +4,6 @@ data
 *.ipynb
 *.txt
 *.pth
+__pycache__
+
 
