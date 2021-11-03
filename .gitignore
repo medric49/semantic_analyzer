@@ -1,9 +1,8 @@
 data
 .idea
 .ipynb_checkpoints
-*.ipynb
 *.txt
 *.pth
 __pycache__
-
+*.npy
 
