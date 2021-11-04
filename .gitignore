@@ -5,4 +5,5 @@ data
 *.pth
 __pycache__
 *.npy
-
+lstm
+training
