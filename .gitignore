@@ -5,5 +5,5 @@ data
 *.pth
 __pycache__
 *.npy
-lstm
+tp_classifier_data
 training
