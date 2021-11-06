@@ -15,8 +15,6 @@ def transform_tsv_to_fasttext_format(tsv_file, output_file):
             output_file.write(f'__label__{data[1]} {data[3]}\n')
 
 
-# Save and Load Functions
-
 def save_checkpoint(save_path, model, valid_loss):
     if save_path == None:
         return
