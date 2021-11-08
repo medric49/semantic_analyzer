@@ -25,7 +25,7 @@ Same at 97.04%
 
 Details are in the notebook `qqp_BERT.ipynb`
 
-### 2. 'Is this sentence semantically correct' problem
+### 2. 'Is this comment positive' problem
 Here, we evaluate how positive is a comment sent.
 The dataset used here to train the model come from [The Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/index.html) dataset
 
