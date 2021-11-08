@@ -29,7 +29,7 @@ Details are in the notebook `qqp_BERT.ipynb`
 Here, we evaluate how positive is a comment sent.
 The dataset used here to train the model come from [The Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/index.html) dataset
 
-Our solution is a BiLSTM model trained with Pytorch. We embed words with the Word2Vec Gensim model trained on the `glove-wiki-gigaword-50` corpus.
+Our solution is a [BiLSTM](https://www.sciencedirect.com/science/article/abs/pii/S0893608005001206) model trained on a negative-positive classification task. We embed words with the Word2Vec [Gensim](https://radimrehurek.com/gensim/index.html) model trained with the [glove-wiki-gigaword-50](https://radimrehurek.com/gensim/models/word2vec.html#pretrained-models) corpus.
 
 How does it work?
 ```shell
