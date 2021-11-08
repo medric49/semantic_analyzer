@@ -4,7 +4,7 @@ from sys import stdin
 import torch
 from transformers import BertTokenizer
 import utils
-from models import BERT
+from models import BERTQuestionAnalyzer
 
 
 def analyze(model, tokenizer, question1, question2):
@@ -18,15 +18,15 @@ def analyze(model, tokenizer, question1, question2):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('question1', type=str, help='Glossary file where to find right words.')
-    parser.add_argument('question2', type=str, help='Glossary file where to find right words.')
+    parser.add_argument('question1', type=str, help='Question 1 ^^')
+    parser.add_argument('question2', type=str, help='Question 2 ^^')
 
     args, _ = parser.parse_known_args(sys.argv[1:])
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
     torch.no_grad()
 
-    best_model = BERT().to(utils.device)
+    best_model = BERTQuestionAnalyzer().to(utils.device)
     utils.load_checkpoint('logs/qqp/model_bert.pt', best_model)
     best_model.eval()
 

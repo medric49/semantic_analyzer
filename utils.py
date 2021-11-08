@@ -57,3 +57,30 @@ def load_metrics(load_path):
 
     return state_dict['train_loss_list'], state_dict['valid_loss_list'], state_dict['global_steps_list']
 
+
+def save_model(model, file_name):
+    torch.save(model.state_dict(), file_name)
+
+
+def load_model(model, file_name):
+    return model.load_state_dict(torch.load(file_name))
+
+
+def vectorize_sentences(sentences, wv, sentence_size):
+    voc = wv.key_to_index.keys()
+    unk = wv['<unk>']
+    eos = wv['<eos>']
+    lengths = []
+    for i, sentence in enumerate(sentences):
+        lengths.append(len(sentence))
+
+        for i, token in enumerate(sentence):
+            if token in voc:
+                sentence[i] = wv[token]
+            else:
+                sentence[i] = unk
+
+        while len(sentence) < sentence_size:
+            sentence.append(eos)
+
+    return sentences, lengths
