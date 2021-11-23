@@ -1,7 +1,7 @@
 # Semantic analyzer
 A semantic analyzer of sentences and questions based on Language processing algorithms (with Pytorch :) ).
 
-### 1. 'Are the similar questions' problem
+### 1. 'Are the questions similar?' problem
 In this problem, we compare similarity between two questions.
 The dataset used here comes from the [Quora Question Pairs](https://www.kaggle.com/c/quora-question-pairs) challenge.
 
@@ -25,7 +25,7 @@ Same at 97.04%
 
 Details are in the notebook `qqp_BERT.ipynb`
 
-### 2. 'Is this comment positive' problem
+### 2. 'Is this comment positive?' problem
 Here, we evaluate how positive is a comment sent.
 The dataset used here to train the model come from [The Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/index.html) dataset
 
