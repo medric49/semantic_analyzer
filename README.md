@@ -9,7 +9,7 @@ Our solution with a pretrained [BERT](https://arxiv.org/abs/1810.04805) model bu
 
 How does it work?
 ```shell
-$ python3 same_analyze.py "Am I wrong?" "Do you love ice scream?"
+python3 same_analyze.py "Am I wrong?" "Do you love ice scream?"
 Same at 0.15%
 ```
 
