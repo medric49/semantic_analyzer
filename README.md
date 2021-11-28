@@ -14,12 +14,12 @@ Same at 0.15%
 ```
 
 ```shell
-$ python3 same_analyze.py "How do I save videos from twitter?" "How do you upload videos from your camera roll onto Twitter?"
+python3 same_analyze.py "How do I save videos from twitter?" "How do you upload videos from your camera roll onto Twitter?"
 Same at 10.42%
 ```
 
 ```shell
-$ python3 same_analyze.py "How do I save videos from twitter?" "How do you upload videos from your camera roll onto Twitter?"
+python3 same_analyze.py "How do I save videos from twitter?" "How do you upload videos from your camera roll onto Twitter?"
 Same at 97.04%
 ```
 
@@ -33,12 +33,12 @@ Our solution is a [BiLSTM](https://www.sciencedirect.com/science/article/abs/pii
 
 How does it work?
 ```shell
-$ python3 sent_analyze.py "I love this movie"
+python3 sent_analyze.py "I love this movie"
 Positive at 100.0%
 ```
 
 ```shell
-$ python3 sent_analyze.py "A great idea becomes a not-great movie."
+python3 sent_analyze.py "A great idea becomes a not-great movie."
 Positive at 0.07%
 ```
 
